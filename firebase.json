@@ -1,0 +1,9 @@
+{
+  "firebase": "purestripe",
+  "public": "app/",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
