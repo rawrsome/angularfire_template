@@ -19,19 +19,21 @@ App.config(['$routeProvider', function($routeProvider, $window) {
 
 // ====> Home controller
 App.controller('HomeCtrl', [
-   '$scope', '$rootScope',
-   function($scope) {
-      var ref = new Firebase('https://purestripe.firebaseio.com/');
-      // Stripe Response Handler
-		$scope.stripeCallback = function (code, result) {
-		    if (result.error) {
-		        window.alert('it failed! error: ' + result.error.message);
+   '$scope',
+   function($scope, $http, stripe) {
+      	
+      	var ref = new Firebase('https://purestripe.firebaseio.com/');
+
+      	// Stripe Response Handler
+		$scope.stripeCallback = function(status, res) {
+		    if(res.error) {
+		        console.log('it failed! error: ' + res.error.message);
 		    } else {
-		        window.alert('success! token: ' + result.id);
+		        console.log('success! token: ' + res.id);
+		        console.log('status: ' + status);
+		        console.log(res);
 		    }
 		};
-      
-   }
-   
+   	}
 ]);
 // <==== end Home controller
