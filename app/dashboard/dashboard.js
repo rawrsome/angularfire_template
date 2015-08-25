@@ -13,7 +13,7 @@ App.config(['$routeProvider', function($routeProvider) {
 // Register controller
 App.controller('DashboardCtrl', ['$scope', function($scope) {
 
-	var ref = new Firebase("https://purestripe.firebaseio.com");
+	var ref = new Firebase("https://jimmyapp.firebaseio.com");
 
 
 }]);

@@ -43,6 +43,7 @@
 
   <!-- stripe -->
   <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script type="text/javascript">Stripe.setPublishableKey('pk_test_d9xwF4xvdNliKcLOSTAb8uXs');</script>
 
   <!-- angular-payments -->
   <script src="bower_components/angular-payments/lib/angular-payments.js"></script>
@@ -52,6 +53,7 @@
 
   <!-- HTML js routes -->
   <script src="home/home.js"></script>
+  <script src="home/charge.js"></script>
   <script src="dashboard/dashboard.js"></script>
 
   <!-- components -->
@@ -59,5 +61,20 @@
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
 
+  <script type="text/javascript" src="https://static.leaddyno.com/js"></script>
+  <script>
+    // If you use multiple sub-domains, set the root domain here
+    // LeadDyno.domain = "yourdomain.com";
+    LeadDyno.key = "df33cb4904fa2ff88eb9fa32ec40cc25a895daa2";
+    LeadDyno.autoWatch();
+    LeadDyno.recordVisit();
+  </script>  
+    hello momma
+
+    <br />
+    <a href="https://purebox-2.recurly.com/subscribe/3month/{{leaddyno.visit.id}}">Order 3 Month Subscriptions</a>
+    <br />
+    <a href="https://purebox-2.recurly.com/subscribe/6month/{{leaddyno.visit.id}}">Order 6 Month Subscriptions</a>
+    <br />  
 </body>
 </html>
