@@ -1,5 +1,5 @@
 {
-  "firebase": "purestripe",
+  "firebase": "jimmyapp",
   "public": "app/",
   "ignore": [
     "firebase.json",

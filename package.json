@@ -33,6 +33,7 @@
   "dependencies": {
     "angular": "^1.3.18",
     "angular-payments": "^1.0.7",
-    "bootstrap": "^3.3.5"
+    "bootstrap": "^3.3.5",
+    "firebase": "^2.2.9"
   }
 }
